@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maria Macaslang | Creative Writer & VA</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .content-box { display: none; padding: 20px; background: #f9f9f9; margin-top: 10px; border-left: 4px solid #007acc; }
+    .project a.toggle { cursor: pointer; display: inline-block; margin-top: 10px; color: #007acc; font-weight: 500; }
+  </style>
+  <script>
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">Maria Macaslang</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Creative Writer, VA & Graphic Designer</h2>
+      <p>I help creators, students, and businesses with storytelling, structure, and standout visuals.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm Maria — a creative storyteller, academic writer, and virtual assistant. I help individuals and businesses bring clarity to their content and order to their systems. From writing TikTok stories to managing client schedules, I bring creativity and organization wherever I go.</p>
+      <p><strong>Tools I use:</strong> Trello · Slack · Google Suite · Canva · Notion</p>
+      <p><strong>Strengths:</strong> Organized · Responsible · Problem-Solver · Detail-Oriented</p>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>What I Can Do</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>✍️ Creative Writing</h3>
+          <ul>
+            <li>Stories for Reddit, TikTok, YouTube</li>
+            <li>YouTube scripts & voiceover writing</li>
+            <li>Fiction & short narrative content</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h3>📚 Academic & Content Writing</h3>
+          <ul>
+            <li>Essays, summaries, articles</li>
+            <li>Blog writing & SEO copy</li>
+            <li>Ghostwriting support</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h3>🧑‍💼 Virtual Assistant</h3>
+          <ul>
+            <li>Inbox & calendar management</li>
+            <li>Client scheduling & coordination</li>
+            <li>Research & organization</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h3>🎨 Graphic Design</h3>
+          <ul>
+            <li>Logos & brand kits</li>
+            <li>Social media posts & Canva templates</li>
+            <li>Pitch decks, CVs, and slides</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Portfolio Samples</h2>
+
+      <div class="project">
+        <h3>📝 Story: The Girl Who Forgot Time</h3>
+        <p>A fictional short story written for TikTok-style narration. Written in a fast-paced, mysterious tone ideal for horror/thriller creators.</p>
+        <a class="toggle" onclick="toggleContent('story1')">Read Story</a>
+        <div class="content-box" id="story1">
+          <p>She woke up in a room with no windows and a clock that ticked backward.</p>
+          <p>Every time she blinked, something changed: the bed was gone, her shoes disappeared, her hair grew longer.</p>
+          <p>She found a mirror and written in fog: "You have 5 minutes left." But left for what?</p>
+          <p>As the final tick echoed, she remembered everything. She had done this before. And failed.</p>
+          <p>This time, she whispered, "Let me remember," as the clock struck 00:00 again.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>🎓 Academic Essay: The Influence of Social Media on Study Habits</h3>
+        <p>An academic essay exploring how students' use of social media platforms affects their productivity, time management, and focus.</p>
+        <a class="toggle" onclick="toggleContent('essay1')">View Essay</a>
+        <div class="content-box" id="essay1">
+          <p><strong>Introduction:</strong> Social media has become a central part of student life. While it offers opportunities for connection and learning, it also presents challenges to concentration and academic success.</p>
+          <p><strong>Main Argument:</strong> Studies show that students who frequently check social media while studying tend to have lower academic performance, primarily due to reduced focus and inefficient time use. However, platforms like Reddit and YouTube can also provide educational content if used intentionally.</p>
+          <p><strong>Conclusion:</strong> The key lies in balance and self-awareness. Students must learn to manage their screen time and identify when social media use turns into distraction rather than education.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>🎥 Script: What If the Moon Could Talk?</h3>
+        <p>A creative script designed for YouTube or TikTok narration, complete with sound suggestions and emotional pacing.</p>
+        <a class="toggle" onclick="toggleContent('script1')">Read Script</a>
+        <div class="content-box" id="script1">
+          <p>[Soft ambient music playing]</p>
+          <p>"Every night, you look up at me. You whisper your wishes, your heartbreaks, your dreams...</p>
+          <p>I’ve seen them all. Lovers kissing under my light. Children making promises. Soldiers saying goodbye.</p>
+          <p>And when you cry, I glow a little brighter — just to remind you, you’re not alone."</p>
+          <p>[Music fades, pause]</p>
+          <p>"What if I could talk back? Would you still look up at me the same way?"</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>🎨 Graphic Design Work</h3>
+        <p>If you want to see my graphic designs, feel free to email me at <a href="mailto:mariamacaslang2@gmail.com">mariamacaslang2@gmail.com</a>.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Looking to collaborate or hire me for a project?</p>
+      <p>Email: <a href="mailto:mariamacaslang2@gmail.com">mariamacaslang2@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Maria Macaslang. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
